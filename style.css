@@ -54,7 +54,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #0066ff;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -70,13 +70,27 @@ nav ul li a:hover::after{
     font-size: 30px;
 }
 
+.hero-image{
+    position: absolute;
+    right: 10%;
+    top: 18%;
+    z-index: 1;
+}
+.hero-image img{
+    width: 380px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px         rgba(0,0,0,0.6);
+    display: block;
+}
+
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
 
 .header-text h1 span{
-    color: #ff004f;
+    color: #0066ff;
 }
 
 /* -----------about--------- */
@@ -119,7 +133,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #0066ff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -136,7 +150,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #b54769;
+    color: #4a7db5;
     font-size: 14px;
 }
 
@@ -192,8 +206,94 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover {
-    background: #ff004f;
+    background: #0066ff;
     transform: translate(-10px);
+}
+
+/* -----------certifications---------- */
+
+#certifications {
+    padding: 50px 0;
+}
+
+.certifications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.cert-card {
+    background: #262626;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.5s, transform 0.5s, box-shadow 0.5s;
+    border: 2px solid transparent;
+}
+
+.cert-card .cert-image {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+    object-fit: contain;
+}
+
+.cert-card i {
+    font-size: 40px;
+    color: #0066ff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.cert-card h3 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.cert-card .cert-issuer {
+    font-size: 14px;
+    color: #4a7db5;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.cert-card .cert-date {
+    font-size: 13px;
+    color: #ababab;
+    margin-bottom: 20px;
+}
+
+.cert-card .cert-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #0066ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: background 0.5s;
+}
+
+.cert-card .cert-link:hover {
+    background: #0052cc;
+}
+
+.cert-card:hover {
+    background: #0066ff;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 102, 255, 0.3);
+    border-color: #0066ff;
+}
+
+.cert-card:hover i {
+    color: #fff;
 }
 
 #portfolio {
@@ -223,7 +323,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #0066ff);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -246,7 +346,7 @@ nav ul li a:hover::after{
 
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #0066ff;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -268,7 +368,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #0066ff;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -277,7 +377,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
-    background: #ff004f;
+    background: #0066ff;
 }
 
 /* -------------contact-------------- */
@@ -294,7 +394,7 @@ nav ul li a:hover::after{
 }
 
 .contact-left p i{
-    color: #ff004f;
+    color: #0066ff;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -313,13 +413,13 @@ nav ul li a:hover::after{
 }
 
 .social-icons a:hover {
-    color: #ff004f;
+    color: #0066ff;
     transform: translateY(-5px);
 }
 
 .btn.btn2 {
     display: inline-block;
-    background:#ff004f;
+    background:#0066ff;
 }
 .contact-right form {
     width: 100%;
@@ -353,7 +453,7 @@ form .btn2 {
 } 
 
 .copyright i {
-    color:#ff004f;
+    color:#0066ff;
 }
 
 /* -------------css for smaller screens---------------- */
@@ -389,7 +489,7 @@ nav .fa-solid {
 }
 
 nav ul {
-    background: #ff004f;
+    background: #0066ff;
     position: fixed;
     top: 0;
     right: -200px;
