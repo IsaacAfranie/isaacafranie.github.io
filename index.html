@@ -6,33 +6,86 @@
     <title>Personal Portfolio Website Afranie Isaac Quaicoe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/images/isaaclogo.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/252b853ee2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/isaaclogo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Projects</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                   <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="images/isaaclogo.png" class="logo" alt="Isaac Logo">
+                </div>
+                <ul id="sidemenu" class="nav-menu">
+                    <li class="nav-item"><a href="#header" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark nav-close" onclick="closemenu()"></i>
                 </ul>
-                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                
-            </nav>
-            <div class="header-text">
-                <h1>Hi, I'm <span>Isaac</span><br><span>Afranie </span> Quaicoe<br></h1>
+                <div class="nav-controls">
+                    <i class="fa-solid fa-bars nav-hamburger" onclick="openmenu()"></i>
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="images/matriculation.jpg" alt="Isaac portrait">
+        </nav>
+
+        <div class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text-container">
+                    <div class="hero-subtitle">Welcome to my creative space</div>
+                    <h1 class="hero-title" id="typing-text">
+                        <span class="gradient-text">Hi, I'm Isaac</span><br>
+                        Frontend Developer & Web Designer
+                    </h1>
+                    <p class="hero-description">
+                        Passionate about building responsive, user-friendly, and modern web applications using technologies like React, JavaScript, HTML, CSS, and WordPress. Focused on creating clean interfaces, smooth user experiences, and functional digital solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Get In Touch</a>
+                        <a href="#about" class="btn-secondary">Learn More</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3 data-count="10">0</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3 data-count="8">0</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3 data-count="3">0</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="floating-card card-1">
+                        <i class="fa-brands fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fa-brands fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fa-brands fa-figma"></i>
+                        <span>Figma</span>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <div class="image-blob"></div>
+                        <img src="images/matriculation.jpg" alt="Isaac portrait" class="hero-img">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+                <span>Scroll to explore</span>
             </div>
         </div>
     </div>
 <!-- ------about-------- -->
-    <div id="about">
+    <div id="about" data-animate="true">
        <div class="container">
         <div class="row">
             <div class="about-col-1">
@@ -40,7 +93,8 @@
             </div>
              <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>I am Afranie Isaac Quaicoe, a third year Computer Science Student at the Kwame Nkrumah University of Science and Technology. I am currently a Frontend Developer, and I'm working assidiously to become a full stack developer and a mobile app developer. I also have interest in AI and Cybersecurity.</p>
+            <p>I am Afranie Isaac Quaicoe, a third-year Computer Science student at the Kwame Nkrumah University of Science and Technology (KNUST). I am currently a Frontend Developer, working assiduously towards becoming a Full Stack Developer and Mobile App Developer. I also have strong interests in Artificial Intelligence and Cybersecurity.I am the Founder and Lead Developer of PrimeCraft Agency, where I work on building modern, responsive, and user-focused web solutions for individuals and businesses. Beyond development, I run a YouTube channel where I teach Computer Science concepts, web design, and frontend development, helping beginners and aspiring developers improve their technical skills and understanding of technology.
+.</p>
 
             <div class="tab-titles">
                 <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
@@ -69,7 +123,7 @@
 
     <!--------------------services---------------------->
 
-    <div id="services">
+    <div id="services" data-animate="true">
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="services-list">
@@ -78,7 +132,7 @@
                 <h2>Web Designing</h2>
                 <P>Using powerful frameworks like react, I am able to build stunning web pages
                 </P>
-                <a href="https://isaacafranierealestate.liveblog365.com" target="_blank">Link to project</a>
+                <a href="https://afr-kan-excel-foundation.vercel.app" target="_blank">African Excel Foundation</a>
                 </div>
                 
                 <div>
@@ -93,7 +147,7 @@
                 <h2>Graphics Design</h2>
                 <P>I have experience in graphics design and I can design logos, posters, flyers, banners and many more. I use powerful tools like Adobe Photoshop to create stunning graphics that are very captivating and provides value. 
                 </P>
-                <a href="https://www.instagram.com/afranie_isaac?igsh=MWpjbzMzazZqY29icQ==" target="_blank">Link to project</a>
+                <a href="https://www.instagram.com/primecraft_1" target="_blank">Link to project</a>
                 </div>
 
                 <div>
@@ -103,8 +157,6 @@
                 </P>
                 <ol>
                 <li><a href="https://gantexbags.com" target="_blank">Gantexbags</a></li>
-                <li><a href="https://chantyperfumes.unaux.com" target="_blank">Chantyperfumes</a></li>
-                <li><a href="https://primecraftagency.liveblog365.com" target="_blank">Primecraft Agency</a></li>
                 </ol>
                 </div>
             </div>
@@ -112,50 +164,91 @@
     </div>
 
     <!-- ---------------------certifications----------------------- -->
-    <div id="certifications">
+    <div id="certifications" data-animate="true">
         <div class="container">
             <h1 class="sub-title">My Certifications</h1>
-            <div class="certifications-list">
+            <div class="certifications-accordion">
 
-                <div class="cert-card">
-                    <img src="images/zecode.jpg" alt="Zecode Certificate" class="cert-image">
-                    <h3>Software Engineering</h3>
-                    <a href="images/zecode.jpg" target="_blank" class="cert-link">View Certificate</a>
+                <div class="cert-item">
+                    <div class="cert-header" onclick="toggleCert(this)">
+                        <div class="cert-title-row">
+                            <i class="fa-solid fa-certificate"></i>
+                            <h3>Software Engineering</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <img src="images/zecode.jpg" alt="Zecode Certificate" class="cert-image">
+                        <a href="images/zecode.jpg" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
                 </div>
 
-                <div class="cert-card">
-                    <img src="images/cloud-computing.png" alt="Cloud Computing Certification" class="cert-image">
-                    <h3>Cloud Computing</h3>
-                    <a href="images/cloud-computing.png" target="_blank" class="cert-link">View Certificate</a>
+                <div class="cert-item">
+                    <div class="cert-header" onclick="toggleCert(this)">
+                        <div class="cert-title-row">
+                            <i class="fa-solid fa-certificate"></i>
+                            <h3>Cloud Computing</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <img src="images/cloud-computing.png" alt="Cloud Computing Certification" class="cert-image">
+                        <a href="images/cloud-computing.png" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
                 </div>
 
-                <div class="cert-card">
-                    <img src="images/cloud-computing-fundamentals.png" alt="Cloud Computing Fundamentals" class="cert-image">
-                    <h3>Cloud Computing Fundamentals</h3>
-                    <a href="images/cloud-computing-fundamentals.png" target="_blank" class="cert-link">View Certificate</a>
+                <div class="cert-item">
+                    <div class="cert-header" onclick="toggleCert(this)">
+                        <div class="cert-title-row">
+                            <i class="fa-solid fa-certificate"></i>
+                            <h3>Cloud Computing Fundamentals</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <img src="images/cloud-computing-fundamentals.png" alt="Cloud Computing Fundamentals" class="cert-image">
+                        <a href="images/cloud-computing-fundamentals.png" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
                 </div>
 
-                <div class="cert-card">
-                    <img src="images/cybersecurity.png" alt="Cybersecurity Certification" class="cert-image">
-                    <h3>Cybersecurity</h3>
-                    <a href="images/cybersecurity.png" target="_blank" class="cert-link">View Certificate</a>
+                <div class="cert-item">
+                    <div class="cert-header" onclick="toggleCert(this)">
+                        <div class="cert-title-row">
+                            <i class="fa-solid fa-certificate"></i>
+                            <h3>Cybersecurity</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <img src="images/cybersecurity.png" alt="Cybersecurity Certification" class="cert-image">
+                        <a href="images/cybersecurity.png" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
                 </div>
 
-                <div class="cert-card">
-                    <img src="images/cybersecurity-fundamentals.png" alt="Cybersecurity Fundamentals" class="cert-image">
-                    <h3>Cybersecurity Fundamentals</h3>
-                    <a href="images/cybersecurity-fundamentals.png" target="_blank" class="cert-link">View Certificate</a>
+                <div class="cert-item">
+                    <div class="cert-header" onclick="toggleCert(this)">
+                        <div class="cert-title-row">
+                            <i class="fa-solid fa-certificate"></i>
+                            <h3>Cybersecurity Fundamentals</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <img src="images/cybersecurity-fundamentals.png" alt="Cybersecurity Fundamentals" class="cert-image">
+                        <a href="images/cybersecurity-fundamentals.png" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="contact">
+    <div id="contact" data-animate="true">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p> <i class="fa-solid fa-paper-plane"></i>www.quaicoeisaac28@gmail.com</p>
+                    <p> <i class="fa-solid fa-paper-plane"></i>isaacafraniequaicoe@gmail.com</p>
                     <p> <i class="fa-solid fa-phone"></i>0552787841</p>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/afranie_isaac?igsh=MWpjbzMzazZqY29icQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -180,38 +273,6 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/252b853ee2.js" crossorigin="anonymous"></script>
-
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-       
-
-function opentab(tabname, elem) {
-    for (var tablink of tablinks) {
-        tablink.classList.remove("active-link");
-    }
-
-    for (var tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-    }
-
-    if (elem) elem.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-}
-    </script>
-
-
-
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-function openmenu() {
-    sidemenu.style.right = "0";
-}
-function closemenu() {
-    sidemenu.style.right = "-200px";
-}
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
